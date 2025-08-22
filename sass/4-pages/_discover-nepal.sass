@@ -1,0 +1,1197 @@
+// Discover Nepal Page Styles
+
+// Hero Section
+.hero-section
+  height: 780px
+  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.35) 32.21%, rgba(0,0,0,0.3) 100%), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
+  background-size: cover
+  background-position: center
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  position: relative
+
+  .hero-content
+    max-width: 1224px
+    margin: 0 auto
+    padding: 0 1.5rem
+    width: 100%
+
+    .hero-text
+      max-width: 640px
+
+      .hero-title
+        font-family: $font-family-display
+        font-size: 100px
+        line-height: 1
+        color: $cream
+        text-transform: uppercase
+        margin-bottom: 37px
+
+      .hero-description
+        font-family: $font-family-base
+        font-size: 22px
+        color: $cream
+        letter-spacing: 0.22px
+        margin-bottom: 2rem
+        line-height: normal
+
+      .hero-button
+        background: transparent
+        color: $cream
+        padding: 1rem 2rem
+        border-radius: 9999px
+        display: inline-flex
+        align-items: center
+        gap: 0.75rem
+        font-family: $font-family-base
+        font-size: 18px
+        letter-spacing: 0.18px
+        border: 1px solid $cream
+        transition: all 0.3s ease
+        text-decoration: none
+
+        &:hover
+          background: $cream
+          color: $primary
+
+  .scroll-indicator
+    position: absolute
+    right: 320px
+    top: 50%
+    transform: translateY(-50%)
+
+    .scroll-track
+      width: 8px
+      height: 300px
+      background: rgba(255, 255, 255, 0.2)
+      border-radius: 9999px
+      position: relative
+
+      .scroll-thumb
+        width: 8px
+        height: 64px
+        background: white
+        border-radius: 9999px
+        position: absolute
+        top: 0
+
+// Header
+.main-header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 50
+  background: transparent
+
+  .header-container
+    max-width: 1224px
+    margin: 0 auto
+    padding: 0 1.5rem
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+
+  .logo-container
+    display: flex
+    align-items: center
+    gap: 0.5rem
+
+    .logo
+      width: 140px
+      height: 140px
+      background: white
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+
+      img
+        max-width: 100%
+        height: auto
+
+  .main-nav
+    display: none
+    align-items: center
+    gap: 2.5rem
+    padding: 1.5rem 0
+
+    @media (min-width: 768px)
+      display: flex
+
+    .nav-link
+      color: white
+      font-family: 'Roboto', sans-serif
+      font-size: 16px
+      text-transform: uppercase
+      letter-spacing: 0.32px
+      text-decoration: none
+      padding-bottom: 0.25rem
+      transition: all 0.3s ease
+
+      &.active
+        font-weight: bold
+        border-bottom: 2px solid white
+
+      &:hover
+        border-bottom: 2px solid white
+
+  .search-icon
+    display: flex
+    align-items: center
+    padding: 1.5rem 0
+
+    svg
+      width: 24px
+      height: 24px
+      color: white
+
+// Why Choose Us Section
+.why-choose-section
+  position: relative
+  overflow: hidden
+  min-height: 100vh
+  background: url('../../assets/about-bg.jpg')
+  background-size: 100%
+  background-position: top right
+
+  .mountain-bg
+    position: absolute
+    inset: 0
+    background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
+    background-size: cover
+    background-position: center
+
+  .mountain-overlay
+    position: absolute
+    inset: 0
+    background: white
+
+
+  .content-container
+    position: relative
+    z-index: 10
+    max-width: 1224px
+    margin: 0 auto
+    padding: 5rem 1.5rem
+
+    .content-wrapper
+      display: flex
+      align-items: center
+
+      .text-content
+        width: 599px
+
+        .section-header
+          margin-bottom: 46px
+
+          .section-title
+            font-family: $font-family-display
+            font-size: 51px
+            color: $primary
+            line-height: 1
+            margin-bottom: 1.5rem
+
+          .section-separator
+            width: 65px
+            height: 8px
+            background: $primary
+
+        .features-list
+          margin-bottom: 46px
+
+          .feature-item
+            display: flex
+            align-items: center
+            gap: 0.75rem
+            margin-bottom: 22px
+
+            .feature-icon
+              width: 16px
+              height: 16px
+              color: $primary
+
+            .feature-text
+              font-family: $font-family-base
+              font-weight: 500
+              font-size: 20px
+              color: $text-dark
+
+        .cta-button
+          background: transparent
+          color: $primary
+          padding: 1rem 2rem
+          border-radius: 9999px
+          display: inline-flex
+          align-items: center
+          gap: 0.75rem
+          font-family: $font-family-base
+          font-size: 18px
+          letter-spacing: 0.18px
+          border: 1px solid $primary
+          transition: all 0.3s ease
+          text-decoration: none
+
+          &:hover
+            background: $primary
+            color: white
+
+// Popular Destinations Section
+.destinations-section
+  background: white
+  padding: 5rem 0
+
+  .section-container
+    max-width: 1224px
+    margin: 0 auto
+    padding: 0 1.5rem
+
+  .section-header
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    margin-bottom: 50px
+
+    .header-content
+      .section-subtitle
+        font-family: $font-family-base
+        font-size: 22px
+        color: $text-gray
+        letter-spacing: 0.22px
+        margin-bottom: 0.5rem
+
+      .section-title
+        font-family: $font-family-display
+        font-size: 51px
+        color: $primary
+        line-height: 1
+        margin-bottom: 1.5rem
+
+      .section-separator
+        width: 65px
+        height: 8px
+        background: $primary
+
+    .navigation-buttons
+      display: flex
+      align-items: center
+      gap: 29px
+
+      .nav-button
+        width: 79px
+        height: 79px
+        border-radius: 50%
+        border: 1px solid $primary
+        display: flex
+        align-items: center
+        justify-content: center
+        background: transparent
+        cursor: pointer
+        transition: all 0.3s ease
+
+        &.disabled
+          opacity: 0.5
+
+        &:hover:not(.disabled)
+          background: $primary
+          color: white
+
+  .destinations-grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 2.25rem
+
+    .destination-card
+      position: relative
+      height: 489px
+      border-radius: 28px
+      overflow: hidden
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1)
+      cursor: pointer
+      transition: transform 0.3s ease
+
+      &:hover
+        transform: translateY(-4px)
+
+      .card-image
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+      .card-overlay
+        position: absolute
+        inset: 0
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent, transparent)
+
+      .card-content
+        position: absolute
+        bottom: 1rem
+        left: 1rem
+        right: 1rem
+
+        .destination-title
+          font-family: $font-family-display
+          font-size: 32px
+          color: $cream
+          letter-spacing: 0.64px
+          margin-bottom: 1rem
+
+        .destination-info
+          display: flex
+          align-items: center
+          justify-content: space-between
+
+          .tour-count
+            font-family: $font-family-base
+            color: white
+            font-size: 16px
+
+          .explore-button
+            background: rgba(3, 48, 67, 0.6)
+            border: 1px solid $cream
+            padding: 0.5rem 1.5rem
+            border-radius: 25px
+            color: $cream
+            font-family: $font-family-base
+            font-weight: 800
+            font-size: 12.825px
+            transition: all 0.3s ease
+
+            &:hover
+              background: $cream
+              color: $primary
+
+// Trending Tours Section
+.trending-section
+  background: $beige
+  padding: 5rem 0
+
+  .section-container
+    max-width: 1224px
+    margin: 0 auto
+    padding: 0 1.5rem
+
+  .section-header
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    margin-bottom: 50px
+
+    .header-content
+      text-align: center
+
+      .section-subtitle
+        font-family: $font-family-base
+        font-size: 22px
+        color: $text-gray
+        letter-spacing: 0.22px
+        margin-bottom: 0.5rem
+
+      .section-title
+        font-family: $font-family-display
+        font-size: 51px
+        color: $primary
+        line-height: 1
+        margin-bottom: 1.5rem
+
+      .decorative-line
+        width: 152px
+        height: 19px
+        margin: 0 auto
+
+  .tours-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 2.25rem
+    margin-bottom: 50px
+
+    .tour-card
+      background: white
+      border-radius: 20px
+      overflow: hidden
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1)
+      transition: transform 0.3s ease
+
+      &:hover
+        transform: translateY(-4px)
+
+      .card-image
+        width: 100%
+        height: 384px
+        object-fit: cover
+
+      .card-content
+        padding: 1.5rem
+
+        .tour-title
+          font-family: $font-family-base
+          font-weight: 500
+          font-size: 24px
+          color: $text-dark
+          margin-bottom: 14px
+
+        .tour-meta
+          display: flex
+          align-items: center
+          gap: 0.5rem
+          margin-bottom: 1rem
+
+          .meta-icon
+            width: 13.5px
+            height: 14.625px
+
+          .meta-text
+            font-family: $font-family-caption
+            font-size: 14px
+            color: $text-gray
+            line-height: 21px
+
+        .view-button
+          background: transparent
+          color: $primary
+          padding: 0.5rem 1.5rem
+          border-radius: 9999px
+          border: 1px solid $primary
+          font-family: $font-family-base
+          font-weight: 600
+          font-size: 16px
+          transition: all 0.3s ease
+          text-decoration: none
+
+          &:hover
+            background: $primary
+            color: white
+
+  .view-all-container
+    text-align: center
+
+    .view-all-button
+      background: transparent
+      color: $primary
+      padding: 1rem 2rem
+      border-radius: 9999px
+      display: inline-flex
+      align-items: center
+      gap: 0.75rem
+      font-family: $font-family-base
+      font-size: 18px
+      letter-spacing: 0.18px
+      border: 1px solid $primary
+      transition: all 0.3s ease
+      text-decoration: none
+
+      &:hover
+        background: $primary
+        color: white
+
+// Experiences Section
+.experiences-section
+  background: white
+  padding: 5rem 0
+
+  .section-container
+    max-width: 1222px
+    margin: 0 auto
+    padding: 0 1.5rem
+
+  .section-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 50px
+
+    .header-content
+      .section-title
+        font-family: $font-family-display
+        font-size: 51px
+        color: $primary
+        line-height: 1
+        margin-bottom: 1.5rem
+
+      .section-separator
+        width: 65px
+        height: 8px
+        background: $primary
+
+    .view-all-button
+      background: transparent
+      color: $primary
+      padding: 1rem 2rem
+      border-radius: 9999px
+      display: flex
+      align-items: center
+      gap: 0.75rem
+      font-family: $font-family-base
+      font-size: 18px
+      letter-spacing: 0.18px
+      border: 1px solid $primary
+      transition: all 0.3s ease
+      text-decoration: none
+
+      &:hover
+        background: $primary
+        color: white
+
+  .experiences-grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 2.25rem
+    height: 736px
+
+    .experience-card
+      position: relative
+      border-radius: 20px
+      overflow: hidden
+      box-shadow: 0 2px 4px -2px rgba(24, 39, 75, 0.12), 0 4px 4px -2px rgba(24, 39, 75, 0.08)
+      height: 350px
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      padding: 1.5rem
+      background-size: cover
+      background-position: center
+      transition: transform 0.3s ease
+
+      &:hover
+        transform: translateY(-4px)
+
+      &::before
+        content: ''
+        position: absolute
+        inset: 0
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
+
+      &.large
+        grid-column: span 2
+
+      .experience-title
+        font-family: $font-family-display
+        font-size: 24px
+        color: white
+        position: relative
+        z-index: 1
+
+// Blog Section
+.blog-section
+  padding: 5rem 0
+
+  .section-container
+    max-width: 1224px
+    margin: 0 auto
+    padding: 0 1.5rem
+
+  .section-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 60px
+
+    .header-content
+      .section-title
+        font-family: $font-family-display
+        font-size: 51px
+        color: $primary
+        line-height: 1
+        margin-bottom: 1.5rem
+
+      .section-separator
+        width: 65px
+        height: 8px
+        background: $primary
+
+    .view-all-button
+      background: transparent
+      color: $primary
+      padding: 1rem 2rem
+      border-radius: 9999px
+      display: flex
+      align-items: center
+      gap: 0.75rem
+      font-family: $font-family-base
+      font-size: 18px
+      letter-spacing: 0.18px
+      border: 1px solid $primary
+      transition: all 0.3s ease
+      text-decoration: none
+
+      &:hover
+        background: $primary
+        color: white
+
+  .blog-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 2.25rem
+
+    .blog-card
+      background: white
+      border-radius: 16px
+      border: 1px solid $border-light
+      overflow: hidden
+      height: 392px
+
+      .card-image-container
+        position: relative
+        height: 216px
+
+        .card-image
+          width: 100%
+          height: 100%
+          object-fit: cover
+
+        .date-card
+          position: absolute
+          top: 10px
+          left: 10px
+          background: rgba(251, 235, 219, 0.6)
+          backdrop-filter: blur(5px)
+          border-radius: 5px
+          padding: 0.5rem
+          text-align: center
+
+          .date-day
+            font-family: $font-family-caption
+            font-weight: 500
+            font-size: 22px
+            color: black
+            line-height: 1
+            letter-spacing: -0.66px
+
+          .date-month,
+          .date-year
+            font-family: $font-family-caption
+            font-weight: 500
+            font-size: 16px
+            color: black
+            letter-spacing: -0.48px
+
+      .card-content
+        padding: 21px
+
+        .blog-title
+          font-family: $font-family-base
+          font-weight: 500
+          font-size: 22px
+          color: black
+          letter-spacing: 0.44px
+          margin-bottom: 0.75rem
+
+        .blog-excerpt
+          font-family: $font-family-base
+          font-size: 18px
+          color: $text-body
+          letter-spacing: 0.36px
+          line-height: 1.2
+          margin-bottom: 1rem
+
+        .read-more-link
+          font-family: $font-family-base
+          font-weight: bold
+          font-size: 16px
+          color: $primary
+          letter-spacing: 0.32px
+          text-decoration: underline
+
+          &:hover
+            color: $orange-accent
+
+// Testimonials Section
+.testimonials-section
+  background: $cream
+  padding: 5rem 0
+  position: relative
+
+  .testimonial-bg
+    position: absolute
+    background: $primary
+    height: 307px
+    left: 252px
+    right: 211px
+    top: 321px
+    border-radius: 32px
+
+  .section-container
+    max-width: 1224px
+    margin: 0 auto
+    padding: 0 1.5rem
+    position: relative
+    z-index: 10
+
+  .section-header
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    margin-bottom: 50px
+
+    .header-content
+      .section-subtitle
+        font-family: $font-family-base
+        font-size: 22px
+        color: $text-gray
+        letter-spacing: 0.22px
+        margin-bottom: 0.5rem
+
+      .section-title
+        font-family: $font-family-display
+        font-size: 51px
+        color: $primary
+        line-height: 1
+        margin-bottom: 1.5rem
+
+      .section-separator
+        width: 65px
+        height: 8px
+        background: $primary
+
+    .navigation-buttons
+      display: flex
+      align-items: center
+      gap: 29px
+
+      .nav-button
+        width: 79px
+        height: 79px
+        border-radius: 50%
+        border: 1px solid $primary
+        display: flex
+        align-items: center
+        justify-content: center
+        background: transparent
+        cursor: pointer
+        transition: all 0.3s ease
+
+        &.disabled
+          opacity: 0.5
+
+        &:hover:not(.disabled)
+          background: $primary
+          color: white
+
+  .testimonials-slider
+    display: flex
+    gap: 2.25rem
+    overflow-x: auto
+
+    .testimonial-card
+      background: #fdfbf9
+      border-radius: 24px
+      padding: 1.5rem
+      box-shadow: 0 8px 18px -6px rgba(24, 39, 75, 0.12), 0 12px 42px -4px rgba(24, 39, 75, 0.12)
+      min-width: 519px
+      flex-shrink: 0
+
+      &.white
+        background: white
+
+      .rating-stars
+        display: flex
+        gap: 0.125rem
+        margin-bottom: 1.5rem
+
+        .star
+          width: 24px
+          height: 24px
+          color: #fbbf24
+
+      .testimonial-text
+        font-family: $font-family-base
+        font-size: 16px
+        color: black
+        letter-spacing: 0.16px
+        margin-bottom: 1rem
+        line-height: normal
+
+      .author-info
+        display: flex
+        align-items: center
+        gap: 0.5rem
+
+        .author-avatar
+          width: 40px
+          height: 40px
+          border-radius: 50%
+          object-fit: cover
+
+        .author-name
+          font-family: $font-family-base
+          font-weight: 600
+          font-size: 16px
+          color: black
+          letter-spacing: 0.16px
+
+// Footer Section
+.main-footer
+  background: $primary
+  color: white
+  padding: 5rem 0
+
+  .footer-container
+    max-width: 1248px
+    margin: 0 auto
+    padding: 0 1.5rem
+
+  .footer-content
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    gap: 2rem
+    margin-bottom: 4rem
+
+    .footer-column
+      h3
+        font-family: $font-family-base
+        font-weight: bold
+        font-size: 18px
+        margin-bottom: 1rem
+
+      ul
+        list-style: none
+        padding: 0
+        margin: 0
+
+        li
+          margin-bottom: 0.75rem
+
+          a
+            font-family: $font-family-base
+            font-size: 16px
+            color: $cream
+            letter-spacing: 0.16px
+            text-decoration: none
+            transition: color 0.3s ease
+
+            &:hover
+              color: white
+
+    .newsletter-column
+      .newsletter-title
+        font-family: $font-family-base
+        font-weight: bold
+        font-size: 18px
+        letter-spacing: 0.18px
+        margin-bottom: 1rem
+
+      .newsletter-form
+        position: relative
+        margin-bottom: 1rem
+
+        .form-container
+          display: flex
+          align-items: center
+          background: transparent
+          border: 1px solid $border-medium
+          border-radius: 60px
+          padding: 0.25rem
+
+          .input-container
+            display: flex
+            align-items: center
+            flex: 1
+            padding: 0 1rem
+
+            .email-icon
+              width: 24px
+              height: 24px
+              color: $text-light-gray
+              margin-right: 1rem
+
+            .email-input
+              background: transparent
+              color: $text-light-gray
+              font-size: 16px
+              letter-spacing: 0.16px
+              flex: 1
+              outline: none
+              border: none
+
+          .subscribe-button
+            background: $cream
+            color: $primary
+            font-family: $font-family-base
+            font-weight: bold
+            font-size: 16px
+            letter-spacing: 0.16px
+            padding: 0.75rem 1.5rem
+            border-radius: 50px
+            border: none
+            cursor: pointer
+            transition: all 0.3s ease
+
+            &:hover
+              background: white
+
+      .newsletter-disclaimer
+        font-family: $font-family-base
+        font-weight: 500
+        font-size: 12px
+        color: $text-medium-gray
+        letter-spacing: 0.12px
+        line-height: 18px
+        margin-bottom: 1.5rem
+
+      .contact-info
+        margin-bottom: 1rem
+
+        .contact-header
+          display: flex
+          align-items: center
+          margin-bottom: 0.5rem
+
+          .phone-icon
+            width: 24px
+            height: 24px
+            color: white
+            margin-right: 0.75rem
+
+          .contact-text
+            font-family: $font-family-base
+            font-weight: bold
+            font-size: 18px
+            color: white
+            letter-spacing: 0.18px
+
+        .phone-number
+          font-family: $font-family-base
+          font-weight: 800
+          font-size: 24px
+          color: $orange-accent
+          letter-spacing: 0.24px
+          line-height: 32px
+
+      .social-media
+        margin-bottom: 1.5rem
+
+        .social-title
+          font-family: $font-family-base
+          font-weight: bold
+          font-size: 18px
+          color: white
+          letter-spacing: 0.18px
+          margin-bottom: 0.5rem
+
+        .social-links
+          display: flex
+          gap: 0.5rem
+
+          .social-link
+            width: 43px
+            height: 43px
+            background: rgba(227, 226, 225, 0.15)
+            border: 1px solid $border-light
+            border-radius: 21.5px
+            display: flex
+            align-items: center
+            justify-content: center
+            transition: all 0.3s ease
+            text-decoration: none
+
+            &:hover
+              background: $cream
+
+            .social-icon
+              width: 20px
+              height: 20px
+              color: white
+
+      .payment-methods
+        .payment-title
+          font-family: $font-family-base
+          font-weight: bold
+          font-size: 18px
+          color: white
+          letter-spacing: 0.18px
+          margin-bottom: 1rem
+
+        .payment-icons
+          display: flex
+          gap: 0.5rem
+
+          .payment-icon
+            width: 60px
+            height: 28px
+            background: white
+            border-radius: 5px
+            border: 1px solid $border-light
+            display: flex
+            align-items: center
+            justify-content: center
+
+            img
+              height: 12px
+
+  .footer-bottom
+    border-top: 1px solid rgba(96, 93, 92, 0.5)
+    padding-top: 2rem
+
+    .footer-bottom-content
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+      .copyright
+        font-family: $font-family-base
+        font-weight: 500
+        font-size: 14px
+        color: $cream
+        letter-spacing: 0.14px
+        line-height: 22px
+
+      .credits
+        font-family: $font-family-base
+        font-size: 12px
+        color: $cream
+        letter-spacing: 0.16px
+        line-height: 18px
+
+        a
+          text-decoration: underline
+          color: $cream
+
+          &:hover
+            color: white
+
+// Utility Classes
+.container
+  max-width: 1224px
+  margin: 0 auto
+  padding: 0 1.5rem
+
+.btn
+  display: inline-flex
+  align-items: center
+  gap: 0.75rem
+  padding: 1rem 2rem
+  border-radius: 9999px
+  font-family: $font-family-base
+  font-size: 18px
+  letter-spacing: 0.18px
+  transition: all 0.3s ease
+  text-decoration: none
+  cursor: pointer
+  border: none
+
+  &.btn-primary
+    background: $primary
+    color: white
+    border: 1px solid $primary
+
+    &:hover
+      background: transparent
+      color: $primary
+
+  &.btn-secondary
+    background: transparent
+    color: $primary
+    border: 1px solid $primary
+
+    &:hover
+      background: $primary
+      color: white
+
+  &.btn-cream
+    background: $cream
+    color: $primary
+    border: 1px solid $cream
+
+    &:hover
+      background: transparent
+      color: $cream
+
+.section-title
+  font-family: $font-family-display
+  font-size: 51px
+  color: $primary
+  line-height: 1
+
+.section-subtitle
+  font-family: $font-family-base
+  font-size: 22px
+  color: $text-gray
+  letter-spacing: 0.22px
+
+.section-separator
+  width: 65px
+  height: 8px
+  background: $primary
+
+// Grid System
+.grid
+  display: grid
+
+.grid-cols-3
+  grid-template-columns: repeat(3, 1fr)
+
+.grid-cols-4
+  grid-template-columns: repeat(4, 1fr)
+
+.grid-cols-5
+  grid-template-columns: repeat(5, 1fr)
+
+.gap-9
+  gap: 2.25rem
+
+.gap-8
+  gap: 2rem
+
+// Flexbox Utilities
+.flex
+  display: flex
+
+.items-center
+  align-items: center
+
+.items-end
+  align-items: flex-end
+
+.justify-between
+  justify-content: space-between
+
+.justify-center
+  justify-content: center
+
+// Spacing
+.p-20
+  padding: 5rem 0
+
+.p-6
+  padding: 1.5rem
+
+.mb-4
+  margin-bottom: 1rem
+
+.mb-6
+  margin-bottom: 1.5rem
+
+.mb-8
+  margin-bottom: 2rem
+
+// Responsive Design
+@media (max-width: 768px)
+  .hero-section
+    .hero-content
+      .hero-text
+        .hero-title
+          font-size: 60px
+
+  .destinations-grid,
+  .tours-grid,
+  .blog-grid
+    grid-template-columns: 1fr
+    gap: 1.5rem
+
+  .experiences-grid
+    grid-template-columns: repeat(2, 1fr)
+    height: auto
+
+    .experience-card
+      &.large
+        grid-column: span 1
+
+  .footer-content
+    grid-template-columns: 1fr
+    gap: 2rem
+
+  .section-header
+    flex-direction: column
+    align-items: flex-start
+    gap: 1rem

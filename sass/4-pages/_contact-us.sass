@@ -1,0 +1,122 @@
+
+.contact-text
+    font-size: 0.875rem
+    margin-bottom: 20px
+    line-height: 26px
+
+.contact-form
+    label
+        display: block
+    input
+        height: 48px
+        padding-left: 10px
+        border: 1px solid #E0E0E0
+        border-radius: 0
+        border-radius: 0
+
+    textarea
+        border: 1px solid #E0E0E0
+        width: 100%
+        padding-left: 10px
+        padding-top: 5px
+        height: 173px
+        border-radius: 0
+
+    .btn
+        text-transform: uppercase
+
+.contact-box
+    margin-bottom: 60px
+
+    @media screen and (min-width: 768px)
+        padding: 40px
+        margin-bottom: -80px
+        background: #fff
+        isolation: isolate
+        box-shadow: 0 4px 36px -10px #3f3f3f42
+
+.contact-box button[type="submit"]
+    height: 40px
+    border-radius: 0
+
+//contact-icons
+
+.contact-icons
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    align-items: start
+
+    h3
+        font-size: 1.25rem
+        margin-bottom: 0
+
+.contact-icon
+    i
+        height: 56px
+        width: 56px
+        border-radius: 100%
+        -webkit-border-radius: 100%
+        border: 1px solid $accent
+        font-size: 1rem
+        +center
+        margin: 0 auto
+        margin-bottom: 30px
+        color: $accent
+
+.form-control:focus
+    color: #495057
+    background-color: #fff
+    border-color: $accent
+    outline: 0
+    box-shadow: 0 !important
+    box-shadow: none
+
+@media screen and (max-width: 767px)
+    .map-wrap
+        margin-top: 40px
+
+.wpcf7-form.init
+    label
+        display: block
+    textarea
+        color: #495057
+        border: 1px solid #ced4da
+        width: 100%
+
+        &:focus
+            color: #495057
+            background-color: #fff
+            border-color: #80bdff
+            outline: 0
+            box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%)
+            padding-left: 10px
+
+.contact-body
+    border-bottom: 2px solid $accent
+
+.marked-text
+    color: $primary
+
+.form-group
+    margin-bottom: 20px
+
+.footer-contact-info
+    svg
+        vertical-align: top
+        color: $accent
+
+.footer-contact-info
+    & a,
+    & span
+        padding-left: 1rem
+        display: inline-block
+
+.online-payment-form
+    padding: 3rem
+    border: 1px solid #e4e4e4
+    background-color: #fdfdfb
+
+.form-contact input,
+.form-contact textarea
+    background: #f8f8f8
+    font-size: 15px

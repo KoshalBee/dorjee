@@ -1,0 +1,147 @@
+.slider__owl-carousel,
+.slider__owl-carousel .item
+    position: relative
+
+.slider__owl-carousel .owl-item img
+    height: 65vh
+    width: 100%
+
+.item.item--text-white,
+.item.item--text-white  h2,
+.item.item--text-white .slider-text
+    color: #fff
+
+.slider-content
+    position: absolute
+    top: 50%
+    width: 100%
+    transform: translateY(-50%)
+
+.slider-content h2
+    font-size: 62px
+    line-height: 64px
+    font-weight: bold
+
+.slider-text
+    font-size: 18px
+    color: #343434
+
+.partners .owl-carousel .owl-item img
+    width: auto
+
+.slider__owl-carousel  .owl-prev
+    left: 40px
+
+.slider__owl-carousel  .owl-next
+    right: 40px
+
+.slider__owl-carousel  .owl-nav [class*=owl-]
+    background: #012337 !important
+
+.owl-prev span,
+.owl-next span
+    font-size: 36px
+
+.owl-prev,
+.owl-next
+    position: absolute
+    top: calc(50% - 40px)
+
+.owl-prev
+    left: -20px
+
+.owl-next
+    right: -20px
+
+.owl-prev:hover,
+.owl-next:hover
+    background: none !important
+
+// .owl-carousel.owl-drag .owl-item + .owl-item
+//     margin-right: 20px
+
+.owl-carousel.owl-drag .owl-item:last-child
+    margin-right: 0 !important
+
+.owl-theme .owl-nav [class*=owl-]
+    border-radius: 100% !important
+    height: 56px
+    width: 56px
+    +center
+    background: #012337 !important
+    margin: 0
+
+.owl-theme .owl-nav [class*=owl-] span
+    opacity: 1 !important
+    height: 40px
+    margin-top: -6px
+    color: #fff
+    +center
+
+.owl-theme .owl-nav
+    margin-top: 0 !important
+
+.services__owl-carousel .owl-prev,
+.services__owl-carousel .owl-next
+    position: inherit
+
+.services__owl-carousel  .owl-nav [class*=owl-]
+    display: inline-block
+
+.services__owl-carousel .owl-nav
+    margin-top: 30px !important
+
+.services__owl-carousel .owl-next
+    margin-left: 10px !important
+
+.slider__owl-carousel .owl-nav [class*=owl-]
+    background: #000 !important
+
+.slider__owl-carousel  .owl-nav [class*=owl-]
+    height: 50px
+    width: 50px
+
+@media (min-width: 768px) and (max-width: 1200px)
+    .slider-content h2
+        font-size: 1.75rem
+        line-height: 1.2
+
+    .slider-content .btn
+        font-size: 12px
+
+@media screen and (max-width: 767px)
+    .slider-content h2
+        font-size: 1.8rem
+        line-height: 1.2
+
+    .slider-text
+        font-size: 8px
+
+    .slider-content .btn
+        font-size: 8px
+
+    .slider.p-t-20
+        padding-top: 0
+
+    .owl-theme .owl-nav [class*=owl-]
+        height: 30px
+        width: 30px
+
+    .owl-next
+        right: 10px
+
+    .owl-prev
+        left: 10px
+
+    .owl-prev span, .owl-next span
+        font-size: 23px
+        top: 2px
+        position: relative
+
+    .owl-prev,
+    .owl-next
+        position: absolute
+        top: calc(50% - 10px)
+
+    .m-b-60
+        margin-bottom: 1.875rem

@@ -1,0 +1,163 @@
+/* #btn================================================== */
+
+.btn
+  padding: 0 1em
+  line-height: 2rem
+  display: inline-block
+  border-radius: 99px
+  border: none
+  font-weight: 600
+  font-size: 0.875rem
+  color: #fff
+  font-weight: 500
+  text-transform: uppercase
+  position: relative
+
+.btn--primary
+  background: $primary
+  color: #fff
+
+  &:hover
+    color: #fff
+    background: lighten( $primary, 5%)
+
+.btn--accent
+  overflow: hidden
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -2
+    background: $accent
+    border-radius: 99px
+
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 0%
+    border-radius: 99px
+    background: $primary
+    transition: height 0.3s cubic-bezier(0.25, 1, 0.5, 1)
+    z-index: -1
+
+
+  &:hover
+    color: #fff
+
+    &::before
+      height: 100%
+      transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1)
+
+.btn--primary-outline
+  border: 2px solid $primary
+  color: $primary
+
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 0%
+    border-radius: 99px
+    background: $primary
+    transition: height 0.3s cubic-bezier(0.25, 1, 0.5, 1)
+    z-index: -1
+
+
+  &:hover
+    border: 2px solid $primary
+    color: #fff
+
+    &::before
+      height: 100%
+      transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1)
+
+.btn--accent-outline
+  border: 2px solid $accent
+  color: $accent
+  overflow: hidden
+  overflow: clip
+  position: relative
+  
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 0%
+    border-radius: 99px
+    background: $accent
+    transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1)
+    z-index: -1
+
+  &:hover
+    border: 2px solid $accent
+    color: #fff
+
+    &::before
+      height: 100%
+      transition: height 0.3s cubic-bezier(0.25, 1, 0.5, 1)
+
+.btn--dark-outline
+  border: 2px solid $dark
+  color: $dark
+
+  &:hover
+    border: 1px solid $dark
+    color: #fff
+    background: $dark
+
+.btn-white--outline
+  border: 2px solid #fff
+  color: #fff
+
+  &:hover
+    border: 2px solid#fff
+    color: #333
+    background: #fff
+
+.header__middle-right-btn
+  margin-left: 24px
+
+/*btn size*/
+.btn--small
+  padding: 0 1.25em
+
+.btn--medium
+  padding: 0 2rem
+  line-height: 48px
+
+.btn--big
+  padding: 0 1.25rem
+  line-height: 48px
+  font-size: 16px
+
+.btn:focus,
+button:focus
+  outline: 0
+
+.btn-link
+  text-decoration: underline
+  color: $accent
+  &:hover
+    color: $accent
+    text-decoration: none
+
+.btnLink
+  color: $accent
+  text-transform: uppercase
+
+  font-weight: 600
+  &:hover
+    color: darken($accent,10% )
+
+.btn i
+  margin-left: 4px

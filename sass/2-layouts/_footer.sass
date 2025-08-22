@@ -1,0 +1,135 @@
+/* #Footer  Styles================================================== */
+
+.footer
+	position: relative
+	font-size: 0.9375rem
+	position: relative
+	padding: 3rem 0 0
+	border-top: 1px solid #DAD7D7
+
+	h2
+		font-size: 1.125rem
+		margin-bottom: 1.25rem
+		position: relative
+		text-transform: uppercase
+		font-weight: bold
+
+	.footer__row
+		> *
+			margin-bottom: 0
+			border-right: 1px solid $accent
+
+			&:last-child,
+			&:nth-last-child(2)
+				border-right: none
+
+
+.footer ul li a:hover
+	text-decoration: underline
+
+.footer p .fa
+	margin-right: 10px
+
+.footer__box
+	li
+		line-height: 26px
+		position: relative
+		padding-left: 20px
+
+		&::after
+			content: "\f105"
+			position: absolute
+			left: 0
+			top: 0
+			font-family: 'FontAwesome'
+			font-size: 9px
+			color: $accent
+
+		a
+			display: block
+
+			&:hover
+				text-decoration: underline
+
+.footer__box li
+	margin-bottom: 8px
+
+.footer__box li a:hover
+	padding-left: 5px
+
+.last_footer
+	padding: 1rem 0
+	font-size: 0.8125rem
+	margin-top: 30px
+	background: $primary
+	position: relative
+	color: #fff
+
+	&::after
+		content: ''
+		position: absolute
+		top: -122px
+		right: 0
+		background: url('../images/footer-bg.png') no-repeat center top
+		height: 123px
+		width: 450px
+
+	p
+		color: #5e7b8f
+
+.copyright
+	clear: both
+	font-size: 14px
+	float: left
+
+.design
+	a
+		color: #fff700
+		text-decoration: underline
+
+		&:hover
+			text-decoration: none
+
+.footer__box-pl
+	padding-left: 40px
+
+.contact-info p svg
+	vertical-align: top
+
+.contact-info p
+	position: relative
+
+.contact-info a, .contact-info span
+	padding-left: 1rem
+	display: inline-block
+	color: inherit
+
+.contact-info-t p svg
+	color: $accent
+
+.partners
+	display: flex
+	flex-wrap: wrap
+
+	img
+		margin-right: 1rem
+		height: 50px
+		object-fit: contain
+
+.footer__social-media
+	font-size: 1rem
+	a
+		color: #333
+		margin-right: 5px
+		border-radius: 100%
+		-webkit-border-radius: 100%
+		color: #fff
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		height: 32px
+		width: 32px
+		background: #F69A10
+
+.partner-outer
+	margin-top: 40px

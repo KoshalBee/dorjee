@@ -1,0 +1,185 @@
+
+/*Header*/
+
+.header
+    position: relative
+    z-index: 1000
+    background: #fff
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.09)
+    -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.09)
+
+    &__middle
+        padding: 1rem 0
+        transition: all 0.3s ease
+
+    &__top
+        font-size: 0.75rem
+        height: 32px
+        background: $primary-dark
+        color: #fff
+        line-height: 32px
+        font-weight: 600
+
+        a
+            color: #fff
+
+        @media screen and (max-width: 767px)
+            height: auto
+
+    &__social-media a
+        color: #fff
+        margin-right: 8px
+
+#scrollTop
+    border-radius: 100%
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    height: 50px
+    width: 50px
+    background: #141116
+    text-align: center
+    line-height: 50px
+    color: #fff
+    position: fixed
+    z-index: 1000
+    right: 26px
+    bottom: 160px
+    cursor: pointer
+
+    .fa-regular
+        font-family: "FontAwesome"
+
+@media (max-width: 767px)
+
+    .header__middle
+        padding: 0.75rem
+
+.shrink
+    position: sticky
+    -ms-position: sticky
+    top: 0
+    z-index: 100
+
+    .header__middle
+        padding: 8px 0
+
+    .logo
+        transition: all 0.2s ease
+        transform: scale(0.9)
+
+    .logo img
+        transition: all 0.2s ease
+        transform: scale(0.9)
+
+.sticky,
+.mobile-menu
+    position: sticky
+    -ms-position: sticky
+    top: 0
+    z-index: 100
+
+.phone
+    margin-right: 1rem
+
+.header__top-right
+    i
+        margin-right: 4px
+
+li.astm-search-menu.is-menu.is-dropdown.menu-item
+    display: grid
+    place-content: center
+    
+.search-icon
+    width: 1.125rem
+
+body:not(:is(.page-id-48, .search-results)) .is-menu .search-icon-path
+    fill: $white
+
+//search-form
+
+.search-form
+    +flex
+    input[type="text"]
+        border: 1px solid $primary
+        padding-left: 0.625rem
+        height: 40px
+        border-right: 0
+
+    .btn-success
+        border-radius: 0
+
+    @media screen and (max-width: 767px)
+        display: none
+
+/* search*/    
+.search-inner
+    display: flex
+    -webkit-display: flex
+    -moz-display: flex
+    align-items: center
+    justify-content: center
+    padding: 0 1.1em
+    cursor: pointer
+    height: 100%
+
+    i
+        color: #444761
+
+//search-form   
+
+.search-form
+    display: flex
+    -webkit-display: flex
+    -moz-display: flex
+    width: 40%
+
+.search-form input[type='text']
+    border: none
+    background: #fff
+    height: 60px
+    padding-left: 0.5rem
+    flex: 1
+
+.search-form input[type='submit']
+    border: none
+    height: 60px
+    background: $primary
+    color: #fff
+    padding: 0 1.5rem
+    text-transform: uppercase
+
+.Search-wrap
+    position: fixed
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,0.8)
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 100000
+    +center
+    justify-content: center
+    align-items: center
+    display: none
+    transition: all 3s ease
+    opacity: 0
+
+.close-btn
+    color: #fff
+    position: absolute
+    right: 100px
+    top: 50px
+    font-size: 30px
+    cursor: pointer
+
+.Search-wrap.show
+    display: flex
+    opacity: 1
+    transition: all 0.3s ease
+    cursor: crosshair
+    z-index: 10000
+
+.logo img
+  width: 230px
+ 

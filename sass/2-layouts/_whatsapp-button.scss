@@ -1,0 +1,75 @@
+.whatsapp-icon {
+    --link-bg: #25d366;
+}
+
+.payment-icon {
+    --link-bg: #007bff;
+}
+
+.whatsapp-icon,
+.payment-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: var(--link-bg);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        &:hover {
+            .hover-text {
+                font-size: 16px;
+                transform: translateX(0px);
+                border-radius: 99px 0 0 99px;
+            }
+        }
+    }
+
+    .hover-text {
+        position: absolute;
+        right: 50%;
+        z-index: -1;
+        border-radius: 99px;
+        color: #fff;
+        white-space: nowrap;
+        padding-inline: 16px 42px;
+        bottom: 0;
+        top: 0;
+        display: grid;
+        place-content: center;
+        background-color: var(--link-bg);
+        font-size: 0;
+        transform: translateX(28px);
+        transition: all 0.3s cubic-bezier(0.44, 0.78, 0.28, 1.01);
+        text-shadow: 0 1px 4px  rgba(0,0,0,0.5);
+    }
+}
+
+.payment-icon {
+    bottom: 90px;
+
+    a {
+        background-color: var(--link-bg);
+
+        i {
+            color: #fff;
+            font-size: 24px;
+        }
+    }
+}
+

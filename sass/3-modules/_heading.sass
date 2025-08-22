@@ -1,0 +1,21 @@
+
+.section-title
+    h2
+        margin-bottom: 0
+        font-weight: 500
+        position: relative
+        font-size: clamp(2rem, 0.879rem + 2.339vw, 2.75rem)
+
+        &::after
+            content: ''
+            display: block
+            margin-top: 10px
+            height: 3px
+            background: $accent
+            width: 240px
+
+    h2.center
+        &::after
+            margin: 0 auto
+            width: 160px
+            margin-top: 10px

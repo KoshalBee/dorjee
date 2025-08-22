@@ -1,0 +1,57 @@
+
+.inner ul,
+.inner ol
+    margin-bottom: 20px
+
+// .inner ul li
+//     list-style: disc inside
+
+.inner ul li
+    list-style: none
+    position: relative
+    padding-left: 20px
+
+    &::before
+        content: "\2022"
+        color: $accent
+        font-weight: bold
+        display: inline-block
+        position: absolute
+        left: 0
+        top: -5px
+        font-size: 1.5em
+
+.inner ul li,
+.inner ol li
+    margin-bottom: 5px
+
+.inner ul
+    list-style: disc
+
+.inner ol,
+.inner ol li
+    list-style: decimal
+
+.inner p
+    margin-bottom: 10px
+
+.inner table
+    width: 100%
+    margin-bottom: 20px
+
+.alignright
+    float: right
+    margin: 0 0 1.25rem 1.25rem
+
+.alignleft
+    float: left
+    margin: 0 1.25rem 1.25rem 0
+
+.aligncenter
+    display: block
+    margin-left: auto
+    margin-right: auto
+
+
+.blog-page h1
+    margin-bottom: 30px

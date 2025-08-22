@@ -1,0 +1,48 @@
+
+.inside-banner
+    background: rgb(255,255,255)
+    background: linear-gradient(-45deg, rgba(255,255,255,0) 0%, rgba(5,118,182,1) 0%, rgba(56,44,96,1) 100%)
+    width: 100%
+    padding: 2rem 0
+    background-size: cover
+
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    h1
+        font-size: 2rem
+        margin-bottom: 0
+        color: #fff
+
+.breadcrumb
+    background: none
+    text-align: center
+    display: inline-flex
+    margin-left: 0
+    padding: 0
+    margin-bottom: 0
+    color: #fff
+
+.breadcrumb-item+.breadcrumb-item::before
+    content: "\f054"
+    color: $primary
+    font-family: "Font Awesome 6 Free"
+    font-weight: 600
+    font-size: 12px
+    margin: 4px
+
+.duration
+    color: #fff
+    font-size: 20px
+
+    strong
+        color: #fff
+
+.inside-banner .breadcrumb-item + .breadcrumb-item::before,
+.inside-banner .breadcrumb-item a
+    color: #fff
+
+.inside-banner .breadcrumb-item.active
+    color: #fff

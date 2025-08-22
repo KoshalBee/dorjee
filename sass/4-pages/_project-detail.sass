@@ -1,0 +1,48 @@
+.project-info-list
+    margin-top: 20px
+    li
+        display: flex
+        text-align: left
+        margin-bottom: 4px
+
+        strong
+
+            flex: 0 0 150px
+
+.related-projects-list
+    .img-block
+        margin-bottom: 30px
+
+.img-block
+    position: relative
+
+.img-overlay
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    background: rgba(0,0,0,0.6)
+    padding: 1rem
+    color: #fff
+
+    h3
+        color: #fff
+        margin-bottom: 0
+        font-size: 1.125rem
+
+.img-block-1 img
+    max-height: 480px
+    width: 100%
+    object-fit: cover
+
+.img-block a h3
+    color: #fff
+
+.img-block
+    overflow: hidden
+    img
+        transition: all 0.2s ease
+        -webkit-transition: all 0.2s ease
+
+    &:hover img
+        transform: scale(1.1)

@@ -1,0 +1,46 @@
+.rescue
+    height: 100px
+    background: $accent
+
+.rescue-icon
+    padding: 0 20px
+    background: darken($accent, 20% )
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.rescue-text
+    color: #fff
+    display: flex
+    align-items: center
+    font-size: 20px
+
+
+.helicopter-rescue
+    --side-padding: 1fr
+    --image-slidein-amount: 100px
+    --content: calc((1140px - var(--image-slidein-amount)) / 2)
+    padding-block-start: 4rem
+
+    .content
+        padding-inline: var(--bs-gutter-x, 0.75rem)
+        padding-block-end: 1.5rem
+
+    @media (min-width: 768px)
+        padding: 0
+        grid-template-columns: var(--side-padding) var(--content) var(--image-slidein-amount) var(--content) var(--side-padding)
+    
+        .content
+            grid-column: 2 / 3
+            margin-right: 40px
+            grid-row: 1
+            display: grid
+            align-content: center
+        
+        .image
+            grid-column: 3 / -1
+            grid-row: 1
+            z-index: -1
+            filter
+        

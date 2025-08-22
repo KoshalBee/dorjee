@@ -1,0 +1,40 @@
+s.pagination .page-item .page-link.pren {
+	color: #8b8b8b;
+}
+
+.pagination .page-item .page-link.pren.prev:hover {
+	transform: translateX(-5px);
+	background: none;
+	color: $accent;
+}
+
+.pagination .page-item .page-link.pren.next:hover {
+	transform: translateX(5px);
+	background: none;
+	color: $accent;
+}
+
+.pagination .page-item .page-link {
+	background: none;
+	border: none;
+	color: #313131;
+	font-size: 1.2rem;
+	border-radius: 0;
+	font-family: 'domine';
+	font-weight: 600;
+	min-width: 40px;
+	text-align: center;
+	margin-right: 0.6rem;
+	border-radius: 2px;
+}
+
+.pagination .page-item.active .page-link,
+.pagination .page-item:hover .page-link {
+	background: $accent;
+	border-radius: 100%;
+	color: #fff;
+}
+
+.pagination {
+	display: inline-flex;
+}

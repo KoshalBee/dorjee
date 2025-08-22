@@ -1,0 +1,23 @@
+/* #Fonts  Styles
+================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'LitSans-Medium';
+    src:url('../webfonts/LitSans-Medium.ttf.woff') format('woff'),
+        url('../webfonts/LitSans-Medium.ttf.svg#LitSans-Medium') format('svg'),
+        url('../webfonts/LitSans-Medium.ttf.eot'),
+        url('../webfonts/LitSans-Medium.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+//font-family: 'Playfair Display', serif;
+//font-family: 'Work Sans', sans-serif;
+//font-family: 'Sofia', cursive;

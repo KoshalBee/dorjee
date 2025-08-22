@@ -1,0 +1,3 @@
+@function bg($img) {
+	@return url($imgUrl + $img);
+}

@@ -1,0 +1,55 @@
+.media-blog
+    background: #fdfdfb
+    margin-bottom: 30px
+    border: 1px solid $border
+    border-radius: 14px
+    height: calc(100% - 30px)
+
+.media-blog-content
+    padding: 20px
+
+    h3
+        font-size: 20px
+        margin-bottom: 20px
+        font-weight: 500
+
+    i
+        color: $accent
+        margin-right: 0.5rem
+
+.media-blog
+    .flex-shrink-0
+        overflow: hidden
+        margin-bottom: 0
+        position: relative
+        border-radius: 12px
+    img
+        height: 100%
+        transition: all 0.4s ease
+        -moz-transition: all 0.4s ease
+        -webkit-transition: all 0.4s ease
+        -o-transition: all 0.4s ease
+        -ms-transition: all 0.4s ease
+
+    &:hover img
+        transform: scale(1.1)
+
+
+.text-overflow 
+   overflow: hidden
+   text-overflow: ellipsis
+   display: -webkit-box
+   -webkit-box-orient: vertical
+
+
+.text-overflow--2
+    -webkit-line-clamp: 2
+            line-clamp: 2
+      
+
+.text-overflow--3
+    -webkit-line-clamp: 3
+            line-clamp: 3
+      
+.media-blog .flex-shrink-0
+    

@@ -1,0 +1,258 @@
+.bread
+    padding: 1rem 0 0
+    margin-bottom: -32px
+    // border-bottom: 1px solid $border
+    // background: #EBEBEB
+
+.tax-experience .bread,
+.tax-destination .bread,
+.single-package .bread
+    display: none
+
+.itinerary-list li
+    margin-bottom: 1rem
+
+.list-common
+    li
+        margin-bottom: 10px
+        position: relative
+        padding-left: 28px
+
+        &::before
+            color: $primary
+            font-family: "Font Awesome 6 Free"
+            font-weight: 600
+            font-size: 1rem
+            position: absolute
+            left: 0
+
+.included-list
+    li
+        &::before
+            content: "\f058"
+            color: $primary
+
+.not-included-list
+    li
+        &::before
+            content: "\f057"
+            color: #dd2f33
+
+.feature
+    padding: 20px 0 0 20px
+    background: #edf5f9
+    position: relative
+
+.media-sub-title
+    font-size: 13px
+    margin-bottom: 0
+
+.media-title
+    font-size: 1rem
+    font-weight: 600
+    color: $primary
+    text-transform: uppercase
+    margin-bottom: 0
+
+.media-sub-title
+    margin-bottom: 4px !important
+
+.feature .media + .media
+    margin-top: 16px
+    text-transform: uppercase
+
+.btn-groups .btn + .btn
+    margin-left: 0.75rem
+
+.ask
+    padding: 2rem
+    background: $primary
+    color: #fff
+
+    h3.ask-ph
+        font-size: 20px
+        color: #fff
+
+.ask-title
+    color: #fff
+    font-size: 24px
+    text-transform: uppercase
+    letter-spacing: -1px
+
+.fixed
+    position: fixed
+    width: 100%
+    top: 200px
+
+.itinerary-outer
+    counter-reset: section
+
+.itinerary-row
+    border: 0
+    margin: 0 0 0 20px
+    position: relative
+    padding: 0 0 40px 60px
+    border-left: 2px dotted rgba(0,0,0,.1)
+
+.itinerary-row:before
+    counter-increment: section
+    content: counter(section)
+    position: absolute
+    top: 0
+    left: -24px
+    font-size: 22px
+    color: #fff
+    font-weight: 600
+    font-family: poppins,sans-serif
+    background: $primary
+    border-radius: 50%
+    width: 40px
+    height: 40px
+    line-height: 40px
+    text-align: center
+
+.more-btn
+    font-weight: 600
+    text-transform: uppercase
+    font-size: 1rem
+    color: $primary
+    margin-left: 40px
+    margin-top: 8px
+    cursor: pointer
+    position: absolute
+    left: 0
+    bottom: 16px
+
+.more-btn.active
+    bottom: -26px
+
+.feature-inside
+    height: auto
+    overflow: hidden
+    
+// .feature-inside .media:nth-of-type(5)
+//     margin-top: 50px
+
+
+.btn-outer
+    background: #E9F1F5 
+    position: relative
+
+.gallery-row > [class*=col-]
+    padding-right: 5px
+    padding-left: 5px
+    margin-bottom: 10px
+
+    img
+        height: 120px
+        object-fit: cover
+
+.inside-hero
+    position: relative
+
+    img
+        width: 100%
+        object-fit: cover
+        aspect-ratio: 3 / 1
+        filter: brightness(0.7)
+        isolation: isolate
+        z-index: -1
+        object-position: top center
+
+        @media (max-width: 767px) 
+            aspect-ratio: 4 / 3
+
+.inside-hero-caption
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    padding: 20px 10px
+    color: #fff
+    background: rgba(0,0,0, 0.4)
+    backdrop-filter: blur(12px)
+    border-top: 1px solid #4a4a4a
+
+.inside-left
+    p
+        margin-right: 2rem
+        margin-bottom: 0
+        font-size: 1.25rem
+
+.media
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-align: start
+    align-items: flex-start
+
+.fe-title
+    background: $primary
+    text-align: center
+    padding: 10px
+    h2
+        color: #fff
+        margin-bottom: 0
+
+.tabs-outer
+    background: #222838
+
+.tabs-nav
+    ul
+        display: flex
+        gap: 10px
+        height: 60px
+        flex-wrap: wrap
+
+    a
+        display: flex
+        align-items: center
+        height: 100%
+        padding: 0 20px
+        line-height: 20px
+        color: #fff
+        text-transform: uppercase
+        font-weight: 500
+
+.inside-hero-tile
+    text-align: center
+    color: #fff
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4)
+    z-index: 1
+
+    h2
+        color: #fff
+        text-align: center
+        font-size: 3rem
+        text-shadow: 0 4px 8px #000000bd
+
+.module + .module
+    margin-top: 60px
+
+.module :where(h2, h3, h4)
+    margin-block: 1.25em 0.75em
+
+.module p.my-0,
+.module:not(:has(.package-text)) p
+    margin-bottom: 1em !important
+
+.module li > p.my-0
+    margin-bottom: 0 !important
+
+.tabs-nav li.active a
+    border-bottom: 2px solid $accent
+
+#m
+    height: 1px
+
+
+.package-text p 
+    line-height: 1.75
+    
+
+.overview h4
+    margin-top: 20px
+    

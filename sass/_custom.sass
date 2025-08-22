@@ -1,0 +1,485 @@
+.para-3
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    line-clamp: 3
+    -webkit-box-orient: vertical
+
+.btn-wrap--mobile
+    display: none
+
+.specialist-consultant
+    background:#eaeef2
+    padding: 1rem
+    text-align: center
+    max-width: 350px
+    margin: 0 auto
+
+    h3 
+        text-transform:uppercase
+        font-size: 1.4rem
+        margin-top: 1.3rem
+        margin-bottom: 1.3rem
+
+    
+
+.wpcf7-list-item.last
+    margin-left: 0
+
+    input[type="checkbox"]
+        display: inline-block 
+        height: 18px
+        width: 18px        
+        vertical-align: middle
+
+.wpcf7-submit.btn--accent
+    background: $accent 
+
+.inside-hero.fade-overlay::after
+    content: ""
+    position: absolute
+    inset: 0 0 -1px 0
+    background: url('../images/gradient-trans-off-white.png')
+    /* background: linear-gradient(to bottom, transparent 45%, #ffffff17 50%, #ffffffa3 80%, #ffffffe0 90%, white) */
+    background-repeat: repeat-x
+    z-index: 1
+    background-size: auto 50%
+    background-position-y: bottom
+
+/* #Media Queries For Responsive================================================== */
+
+@media screen and (min-width: 993px) and (max-width: 1200px)
+    .navbar-expand-lg .navbar-nav .nav-link
+        padding: 0 0.6rem
+        font-size: 0.9375rem 
+
+@media screen and (min-width: 992px) 
+    .navbar-toggler
+        display: none
+
+    .navbar-toggler:focus 
+        border: none
+        outline: none 
+        box-shadow: none
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+    .dropdown--language
+        display: none
+
+    
+    .about-img img 
+        height: auto
+
+    .destination-grid
+        grid-template-columns: 1fr 1fr
+
+    .navbar-toggler:focus
+        border: none
+        outline: none
+        box-shadow: none
+
+    .notices
+        margin-top: 30px
+
+    .tabs-nav ul
+        height: auto
+        text-align: center
+        flex-wrap: nowrap
+
+    .gallery-row > [class*=col-] img
+        height: 100px
+
+    #google_translate_element
+        display: none
+
+    .btn--big
+        padding: 0 1rem
+        font-size: 14px
+
+    .offer
+        background: none
+        height: auto
+
+    .card--fixed-departure figure::after
+        content: ""
+        position: absolute
+        left: 0
+        top: inherit
+        bottom: 0
+        width: 100%
+        height: 40%
+
+    .card h2
+        font-size: 26px
+
+    .section-title h2
+        font-size: 2rem
+
+    .rescue-text
+        font-size: 1rem
+
+    .card--fixed-departure
+        margin-top: 30px
+
+    .navdiv
+        width: 40%
+
+    .footer__box
+        margin-top: 30px
+
+    h3
+        font-size: 1.25rem
+
+    .header__middle-right-btn
+        margin-right: 24px
+
+@media screen and (max-width: 767px)
+    html
+        font-size: 15px
+
+    .m-t-40
+        margin-top: 1.25rem
+
+    .h2, h2
+        font-size: 1.5rem
+
+    .p-t-80
+        padding-top: 2rem
+
+    .p-t-60
+        padding-top: 30px
+
+    .p-tb-60
+        padding-top: 30px
+        padding-bottom: 30px
+
+    .card h2
+        font-size: 26px
+
+    .section-title h2
+        font-size: 2rem
+
+    .dropdown--language
+        display: none
+
+    .d-flex.media-blog
+        flex-direction: column
+        img
+            width: 100%
+
+    .btn--big
+        padding: 0 1rem
+        font-size: 14px
+
+    .offer
+        background: none
+        height: auto
+
+    .card--fixed-departure
+        margin-bottom: 30px
+
+    .gallery-row
+        img
+            height: 120px
+            object-fit: cover
+
+    .navbar-toggler:focus
+        border: none
+        outline: none
+        box-shadow: none
+
+    .feature
+        margin-top: 10px
+
+    .input-outer i
+        top: 14px
+
+    .carousel-caption
+        font-size: 26px
+
+    .notices
+        padding-left: 0
+        border: 0
+
+    .img-block img
+        width: 100%
+
+    .contact-info
+        margin-top: 30px
+
+    .shrink .header__middle
+        padding: 8px 0
+
+    .about__figure::after
+        display: none
+
+    .navbar-toggler
+        display: block
+
+    .news .owl-theme .owl-nav
+        display: none
+
+    .blog-single__media img
+        width: 80px
+        height: 80px
+
+    .inside-banner h1
+        font-size: 1.8rem
+
+    .inside-banner
+        height: auto
+
+    .notices
+        margin-top: 40px
+
+    .pagination.m-t-40
+        margin-top: 40px
+
+    .contact-icons
+        margin-top: 40px
+
+    .container.d-flex.align-items-center
+        display: block !important
+        position: relative
+
+    .footer .col-lg-3.col-sm-6 + .col-lg-3.col-sm-6
+        padding-top: 30px
+
+    .section-title h2
+        line-height: 1.2
+
+    .grid-categories .grid-item + .grid-item
+        margin-top: 30px
+
+    .header__middle-right-btn
+        margin-left: 0
+        margin-right: 20px
+
+    .header__middle  .btn
+        font-size: 10px
+        line-height: 1.5rem
+
+    .header
+        position: sticky
+        -ms-position: sticky
+        top: 0
+        z-index: 100
+
+    .navdiv
+        top: 0
+
+    .navbar-toggler
+        border: none
+        width: 28px
+        height: 20px
+
+    .navbar-toggler .navbar-toggler-icon, .navbar-toggler .navbar-toggler-icon::after, .navbar-toggler .navbar-toggler-icon::before
+        height: 2px
+
+    .navbar-toggler.toggler-spring .navbar-toggler-icon::before
+        top: 8px
+
+    .navbar-toggler.toggler-spring .navbar-toggler-icon::after
+        top: 16px
+
+    .slider__owl-carousel .owl-prev
+        left: 10px
+
+    .slider__owl-carousel .owl-next
+        right: 10px
+
+    .section-title h2
+        font-size: 1.525rem
+
+    .section-title h3
+        margin-bottom: 8px
+
+    .t-map iframe
+        height: 250px
+
+    .slider__owl-carousel .owl-item img
+        height: auto
+
+    .location
+        margin-bottom: 1rem
+        display: flex
+        > svg
+            min-width: 24px
+
+    .destination .card
+        margin-bottom: 30px
+
+    .footer
+        margin-top: 50px
+
+    .m-b-30
+        margin-bottom: 1.25rem
+
+    .p-t-100
+        padding-top: 1.875rem
+
+    .m-t-60
+        margin-top: 30px
+
+    .month-content
+        margin-top: 20px
+
+    .rescue-text
+        font-size: 13px
+
+    .rescue-icon
+        align-items: inherit
+
+    .about-img
+        margin-top: 30px
+
+    .btn-wrap-mobile
+        margin-left: auto
+        margin-top: 20px
+
+    .last_footer
+        margin-top: 130px
+
+    .about__figure
+        margin-bottom: 0
+
+    .accept-img
+        height: 40px
+        object-fit: contain
+
+    .partners img
+        height: 40px
+
+    .p-tb-80
+        padding-top: 30px
+        padding-bottom: 30px
+
+    .btn--big
+        padding: 0 1em
+        line-height: 45px
+
+    .design
+        margin-top: 0.5rem
+
+    .testimonials.m-t-50
+        margin-top: 0
+
+    .count
+        display: none
+
+    .card--fixed-departure figure
+        height: auto
+
+    .fixed-departure .btn
+        line-height: 1.8
+        padding: 8px 10px
+        font-size: 11px
+
+    .card-meta-right
+        padding-left: 1rem
+
+    .destination-grid
+        display: block
+
+        .grid-item + .grid-item
+            margin-top: 20px
+
+    .about-img img
+        height: auto
+
+    .partners
+        margin-bottom: 20px
+
+    .inside-hero-caption
+        position: inherit
+
+    .inside-hero-tile
+        top: 55%
+
+        h2
+            font-size: 32px
+            margin-bottom: 0
+
+    .inside-right
+        margin-top: 20px
+
+    .inside-hero-caption
+        background: rgb(213 222 231 / 60%)
+
+    .inside-hero-caption
+        color: inherit
+
+    #google_translate_element
+        display: none
+
+    .tabs-nav ul
+        height: auto
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+
+        li
+            background: #222838
+
+    .tabs-outer
+        background: none
+        margin-top: 20px
+
+    .tabs-nav a
+        padding: 0 10px
+        line-height: 32px
+
+    .footer-contact-info
+        margin-top: 20px
+
+    .destination-content
+        margin-top: 20px
+
+    .blog-post h2
+        font-size: 26px
+
+    .detail-page .col-md-8.col-lg-8 
+        order: 2
+
+    .detail-page .col-md-4.col-lg-4
+        order: 1
+
+    .btn-wrap--mobile
+        display: block
+        position: fixed
+        left: 10px
+        bottom: 20px
+        z-index: 100    
+
+        .btn--big
+            line-height: 38px
+            font-size: 13px
+
+        .me-3 
+
+            margin-right: 0.5rem !important
+
+    .section-title h2::after 
+        width: 60%  
+
+    .title-wrap .btn-wrap.m-t-30
+        margin-top: 0 !important
+
+    .btn--medium 
+        padding: 0 1.5rem
+        line-height: 40px
+
+    .media-blog-content.ms-3
+        margin-left: 0 !important
+
+
+    .about-img img 
+        height: auto    
+
+    .best-selling .card img, .categories-pages .card img 
+        height: 220px
+        object-fit: cover
+        width: 100%
+
+.white-space-nowrap
+    white-space: nowrap
