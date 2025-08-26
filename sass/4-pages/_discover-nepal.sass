@@ -2,14 +2,32 @@
 
 // Hero Section
 .hero-section
-  height: 780px
-  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.35) 32.21%, rgba(0,0,0,0.3) 100%), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
-  background-size: cover
-  background-position: center
-  display: flex
-  align-items: center
-  justify-content: flex-start
+  min-height: 100vh
   position: relative
+  overflow: hidden
+
+  // Embla Carousel Container
+  .embla
+    height: 100vh
+    overflow: hidden
+
+  .embla__container
+    display: flex
+    height: 100%
+
+  .embla__slide
+    flex: 0 0 100%
+    min-width: 0
+    height: 100%
+
+  .hero-slide
+    min-height: 100vh
+    background-size: cover
+    background-position: center
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    position: relative
 
   .hero-content
     max-width: 1224px
@@ -55,11 +73,84 @@
           background: $cream
           color: $primary
 
+  // Navigation Controls
+  .hero-navigation
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    transform: translateY(-50%)
+    display: flex
+    justify-content: space-between
+    padding: 0 2rem
+    z-index: 10
+    pointer-events: none
+
+    .hero-nav-btn
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      background: rgba(255, 255, 255, 0.1)
+      border: 1px solid rgba(255, 255, 255, 0.3)
+      color: white
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      transition: all 0.3s ease
+      backdrop-filter: blur(10px)
+      pointer-events: auto
+
+      &:hover
+        background: rgba(255, 255, 255, 0.2)
+        border-color: rgba(255, 255, 255, 0.5)
+        transform: scale(1.1)
+
+      &:disabled
+        opacity: 0.5
+        cursor: not-allowed
+
+        &:hover
+          transform: none
+          background: rgba(255, 255, 255, 0.1)
+
+      svg
+        width: 24px
+        height: 24px
+
+  // Pagination Dots
+  .hero-pagination
+    position: absolute
+    bottom: 2rem
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 10
+
+    .hero-dots
+      display: flex
+      gap: 0.75rem
+
+      .hero-dot
+        width: 12px
+        height: 12px
+        border-radius: 50%
+        background: rgba(255, 255, 255, 0.3)
+        cursor: pointer
+        transition: all 0.3s ease
+
+        &.active
+          background: white
+          transform: scale(1.2)
+
+        &:hover
+          background: rgba(255, 255, 255, 0.6)
+
   .scroll-indicator
     position: absolute
     right: 320px
     top: 50%
     transform: translateY(-50%)
+    z-index: 10
 
     .scroll-track
       width: 8px
@@ -297,70 +388,99 @@
           background: $primary
           color: white
 
-  .destinations-grid
-    display: grid
-    grid-template-columns: repeat(4, 1fr)
-    gap: 2.25rem
+  // Destinations Carousel
+  .destinations-carousel
+    overflow: visible
 
-    .destination-card
-      position: relative
-      height: 489px
-      border-radius: 28px
-      overflow: hidden
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1)
-      cursor: pointer
-      transition: transform 0.3s ease
+    .embla
+      overflow: visible
 
-      &:hover
-        transform: translateY(-4px)
+    .embla__container
+      display: flex
+      margin-left: 0
 
-      .card-image
-        width: 100%
-        height: 100%
-        object-fit: cover
+    .embla__slide
+      flex: 0 0 auto
+      min-width: 0
+      margin-right: 2.25rem
 
-      .card-overlay
-        position: absolute
-        inset: 0
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent, transparent)
+      &:last-child
+        margin-right: 0
 
-      .card-content
-        position: absolute
-        bottom: 1rem
-        left: 1rem
-        right: 1rem
+      // Desktop: show exactly 3 slides, no partial slides
+      @media (min-width: 1024px)
+        flex: 0 0 calc(33.333% - 1.5rem)
+        max-width: calc(33.333% - 1.5rem)
 
-        .destination-title
-          font-family: $font-family-display
-          font-size: 32px
+      // Tablet: show exactly 2 slides, no partial slides
+      @media (min-width: 768px) and (max-width: 1023px)
+        flex: 0 0 calc(50% - 1.125rem)
+        max-width: calc(50% - 1.125rem)
+
+      // Mobile: show exactly 1 slide, no partial slides
+      @media (max-width: 767px)
+        flex: 0 0 calc(100% - 1.125rem)
+        max-width: calc(100% - 1.125rem)
+
+  .destination-card
+    position: relative
+    height: 489px
+    border-radius: 28px
+    overflow: hidden
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1)
+    cursor: pointer
+    transition: transform 0.3s ease
+
+    &:hover
+      transform: translateY(-4px)
+
+    .card-image
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+    .card-overlay
+      position: absolute
+      inset: 0
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent, transparent)
+
+    .card-content
+      position: absolute
+      bottom: 1rem
+      left: 1rem
+      right: 1rem
+
+      .destination-title
+        font-family: $font-family-display
+        font-size: 32px
+        color: $cream
+        letter-spacing: 0.64px
+        margin-bottom: 1rem
+
+      .destination-info
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .tour-count
+          font-family: $font-family-base
+          color: white
+          font-size: 16px
+
+        .explore-button
+          background: rgba(3, 48, 67, 0.6)
+          border: 1px solid $cream
+          padding: 0.5rem 1.5rem
+          border-radius: 25px
           color: $cream
-          letter-spacing: 0.64px
-          margin-bottom: 1rem
+          font-family: $font-family-base
+          font-weight: 800
+          font-size: 12.825px
+          transition: all 0.3s ease
 
-        .destination-info
-          display: flex
-          align-items: center
-          justify-content: space-between
-
-          .tour-count
-            font-family: $font-family-base
-            color: white
-            font-size: 16px
-
-          .explore-button
-            background: rgba(3, 48, 67, 0.6)
-            border: 1px solid $cream
-            padding: 0.5rem 1.5rem
-            border-radius: 25px
-            color: $cream
-            font-family: $font-family-base
-            font-weight: 800
-            font-size: 12.825px
-            transition: all 0.3s ease
-
-            &:hover
-              background: $cream
-              color: $primary
+          &:hover
+            background: $cream
+            color: $primary
 
 // Trending Tours Section
 .trending-section
@@ -1173,6 +1293,39 @@
         .hero-title
           font-size: 60px
 
+    // Mobile navigation controls
+    .hero-navigation
+      padding: 0 1rem
+
+      .hero-nav-btn
+        width: 50px
+        height: 50px
+
+        svg
+          width: 20px
+          height: 20px
+
+    // Mobile pagination
+    .hero-pagination
+      bottom: 1rem
+
+      .hero-dots
+        gap: 0.5rem
+
+        .hero-dot
+          width: 10px
+          height: 10px
+
+    // Mobile scroll indicator
+    .scroll-indicator
+      right: 1rem
+
+      .scroll-track
+        height: 200px
+
+        .scroll-thumb
+          height: 40px
+
   .destinations-grid,
   .tours-grid,
   .blog-grid
@@ -1195,3 +1348,25 @@
     flex-direction: column
     align-items: flex-start
     gap: 1rem
+
+@media (max-width: 480px)
+  .hero-section
+    .hero-content
+      .hero-text
+        .hero-title
+          font-size: 48px
+
+        .hero-description
+          font-size: 18px
+
+        .hero-button
+          padding: 0.75rem 1.5rem
+          font-size: 16px
+
+    // Hide navigation buttons on very small screens
+    .hero-navigation
+      display: none
+
+    // Adjust scroll indicator for small screens
+    .scroll-indicator
+      display: none

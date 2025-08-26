@@ -10,6 +10,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zin+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
+    <!-- Embla Carousel CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/embla-carousel@8.0.0/embla-carousel.css">
 </head>
 
 <body>
@@ -46,23 +48,115 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Discover Nepal</h1>
-                <p class="hero-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa sem enim tellus vel molestie donec
-                    quis. Est maecenas ultrices magna nibh mi habitasse elementum nisi.
-                </p>
-                <a href="#" class="hero-button">
-                    Explore
-                    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="24" y1="9" x2="-4.37114e-08" y2="9" stroke="currentColor" />
-                        <path d="M17 15C17 15 17.875 12.9643 19.625 11.25C21.375 9.53571 24 9 24 9"
-                            stroke="currentColor" />
-                        <path d="M17 2C17 2 17.875 4.375 19.625 6.375C21.375 8.375 24 9 24 9" stroke="currentColor" />
-                    </svg>
-                </a>
+        <div class="embla" id="embla">
+            <div class="embla__container">
+                <!-- Slide 1: Discover Nepal -->
+                <div class="embla__slide">
+                    <div class="hero-slide" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.35) 32.21%, rgba(0,0,0,0.3) 100%), url('assets/hero-bg.png');">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h1 class="hero-title">Discover Nepal</h1>
+                                <p class="hero-description">
+                                    Experience the breathtaking beauty of the Himalayas, ancient temples, and rich cultural heritage that makes Nepal a truly magical destination.
+                                </p>
+                                <a href="#" class="hero-button">
+                                    Explore
+                                    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="24" y1="9" x2="-4.37114e-08" y2="9" stroke="currentColor" />
+                                        <path d="M17 15C17 15 17.875 12.9643 19.625 11.25C21.375 9.53571 24 9 24 9" stroke="currentColor" />
+                                        <path d="M17 2C17 2 17.875 4.375 19.625 6.375C21.375 8.375 24 9 24 9" stroke="currentColor" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Adventure Awaits -->
+                <div class="embla__slide">
+                    <div class="hero-slide" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.35) 32.21%, rgba(0,0,0,0.3) 100%), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h1 class="hero-title">Adventure Awaits</h1>
+                                <p class="hero-description">
+                                    From trekking to Everest Base Camp to exploring ancient monasteries, embark on the adventure of a lifetime in the heart of the Himalayas.
+                                </p>
+                                <a href="#" class="hero-button">
+                                    Start Adventure
+                                    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="24" y1="9" x2="-4.37114e-08" y2="9" stroke="currentColor" />
+                                        <path d="M17 15C17 15 17.875 12.9643 19.625 11.25C21.375 9.53571 24 9 24 9" stroke="currentColor" />
+                                        <path d="M17 2C17 2 17.875 4.375 19.625 6.375C21.375 8.375 24 9 24 9" stroke="currentColor" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Cultural Heritage -->
+                <div class="embla__slide">
+                    <div class="hero-slide" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.35) 32.21%, rgba(0,0,0,0.3) 100%), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h1 class="hero-title">Cultural Heritage</h1>
+                                <p class="hero-description">
+                                    Immerse yourself in Nepal's rich cultural tapestry, from ancient temples and palaces to vibrant festivals and traditional crafts.
+                                </p>
+                                <a href="#" class="hero-button">
+                                    Explore Culture
+                                    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="24" y1="9" x2="-4.37114e-08" y2="9" stroke="currentColor" />
+                                        <path d="M17 15C17 15 17.875 12.9643 19.625 11.25C21.375 9.53571 24 9 24 9" stroke="currentColor" />
+                                        <path d="M17 2C17 2 17.875 4.375 19.625 6.375C21.375 8.375 24 9 24 9" stroke="currentColor" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Spiritual Journey -->
+                <div class="embla__slide">
+                    <div class="hero-slide" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.35) 32.21%, rgba(0,0,0,0.3) 100%), url('https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h1 class="hero-title">Spiritual Journey</h1>
+                                <p class="hero-description">
+                                    Find inner peace and spiritual enlightenment in the birthplace of Buddha, where ancient wisdom meets modern seekers.
+                                </p>
+                                <a href="#" class="hero-button">
+                                    Find Peace
+                                    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="24" y1="9" x2="-4.37114e-08" y2="9" stroke="currentColor" />
+                                        <path d="M17 15C17 15 17.875 12.9643 19.625 11.25C21.375 9.53571 24 9 24 9" stroke="currentColor" />
+                                        <path d="M17 2C17 2 17.875 4.375 19.625 6.375C21.375 8.375 24 9 24 9" stroke="currentColor" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <!-- <div class="hero-navigation">
+            <button class="hero-nav-btn hero-prev-btn" id="heroPrevBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="hero-nav-btn hero-next-btn" id="heroNextBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div> -->
+
+        <!-- Pagination Dots -->
+        <div class="hero-pagination">
+            <div class="hero-dots" id="heroDots"></div>
         </div>
 
         <!-- Scroll Indicator -->
@@ -141,85 +235,130 @@
                 </div>
 
                 <div class="navigation-buttons">
-                    <button class="nav-button disabled">
+                    <button class="nav-button" id="destinationsPrevBtn">
                         <svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="39.5" cy="39.5" r="39" transform="matrix(-1 0 0 1 79 0)" stroke="#033043" />
                             <path
                                 d="M32.9393 41.0607C32.3536 40.4749 32.3536 39.5251 32.9393 38.9393L42.4853 29.3934C43.0711 28.8076 44.0208 28.8076 44.6066 29.3934C45.1924 29.9792 45.1924 30.9289 44.6066 31.5147L36.1213 40L44.6066 48.4853C45.1924 49.0711 45.1924 50.0208 44.6066 50.6066C44.0208 51.1924 43.0711 51.1924 42.4853 50.6066L32.9393 41.0607ZM36 40V41.5H34V40V38.5H36V40Z"
                                 fill="currentColor" />
                         </svg>
-
                     </button>
-                    <button class="nav-button">
+                    <button class="nav-button" id="destinationsNextBtn">
                         <svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="39.5" cy="39.5" r="39" stroke="#033043" />
                             <path
                                 d="M46.0607 41.0607C46.6464 40.4749 46.6464 39.5251 46.0607 38.9393L36.5147 29.3934C35.9289 28.8076 34.9792 28.8076 34.3934 29.3934C33.8076 29.9792 33.8076 30.9289 34.3934 31.5147L42.8787 40L34.3934 48.4853C33.8076 49.0711 33.8076 50.0208 34.3934 50.6066C34.9792 51.1924 35.9289 51.1924 36.5147 50.6066L46.0607 41.0607ZM43 40V41.5H45V40V38.5H43V40Z"
                                 fill="currentColor" />
                         </svg>
-
                     </button>
                 </div>
             </div>
-
-            <div class="destinations-grid">
-                <!-- Nepal -->
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                        alt="Nepal" class="card-image">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <h3 class="destination-title">Nepal</h3>
-                        <div class="destination-info">
-                            <span class="tour-count">18 Tours</span>
-                            <button class="explore-button">Explore</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tibet -->
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1571218651-8010b9c4b9d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                        alt="Tibet" class="card-image">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <h3 class="destination-title">Tibet</h3>
-                        <div class="destination-info">
-                            <span class="tour-count">8 Tours</span>
-                            <button class="explore-button">Explore</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bhutan -->
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                        alt="Bhutan" class="card-image">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <h3 class="destination-title">Bhutan</h3>
-                        <div class="destination-info">
-                            <span class="tour-count">18 Tours</span>
-                            <button class="explore-button">Explore</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- India -->
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                        alt="India" class="card-image">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <h3 class="destination-title">India</h3>
-                        <div class="destination-info">
-                            <span class="tour-count">12 Tours</span>
-                            <button class="explore-button">Explore</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+
+          <div class="destinations-carousel">
+
+        <div class="section-container">
+              <div class="embla" id="destinationsEmbla">
+                  <div class="embla__container">
+                      <!-- Slide 1: Nepal -->
+                      <div class="embla__slide">
+                          <div class="destination-card">
+                              <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                  alt="Nepal" class="card-image">
+                              <div class="card-overlay"></div>
+                              <div class="card-content">
+                                  <h3 class="destination-title">Nepal</h3>
+                                  <div class="destination-info">
+                                      <span class="tour-count">18 Tours</span>
+                                      <button class="explore-button">Explore</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Slide 2: Tibet -->
+                      <div class="embla__slide">
+                          <div class="destination-card">
+                              <img src="https://images.unsplash.com/photo-1571218651-8010b9c4b9d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                  alt="Tibet" class="card-image">
+                              <div class="card-overlay"></div>
+                              <div class="card-content">
+                                  <h3 class="destination-title">Tibet</h3>
+                                  <div class="destination-info">
+                                      <span class="tour-count">8 Tours</span>
+                                      <button class="explore-button">Explore</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Slide 3: Bhutan -->
+                      <div class="embla__slide">
+                          <div class="destination-card">
+                              <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                  alt="Bhutan" class="card-image">
+                              <div class="card-overlay"></div>
+                              <div class="card-content">
+                                  <h3 class="destination-title">Bhutan</h3>
+                                  <div class="destination-info">
+                                      <span class="tour-count">18 Tours</span>
+                                      <button class="explore-button">Explore</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Slide 4: India -->
+                      <div class="embla__slide">
+                          <div class="destination-card">
+                              <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                  alt="India" class="card-image">
+                              <div class="card-overlay"></div>
+                              <div class="card-content">
+                                  <h3 class="destination-title">India</h3>
+                                  <div class="destination-info">
+                                      <span class="tour-count">12 Tours</span>
+                                      <button class="explore-button">Explore</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Slide 5: Myanmar -->
+                      <div class="embla__slide">
+                          <div class="destination-card">
+                              <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                  alt="Myanmar" class="card-image">
+                              <div class="card-overlay"></div>
+                              <div class="card-content">
+                                  <h3 class="destination-title">Myanmar</h3>
+                                  <div class="destination-info">
+                                      <span class="tour-count">6 Tours</span>
+                                      <button class="explore-button">Explore</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Slide 6: Sri Lanka -->
+                      <div class="embla__slide">
+                          <div class="destination-card">
+                              <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                  alt="Sri Lanka" class="card-image">
+                              <div class="card-overlay"></div>
+                              <div class="card-content">
+                                  <h3 class="destination-title">Sri Lanka</h3>
+                                  <div class="destination-info">
+                                      <span class="tour-count">10 Tours</span>
+                                      <button class="explore-button">Explore</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
     </section>
 
     <!-- Trending Tours -->
@@ -756,18 +895,10 @@
         </div>
     </footer>
 
+    <!-- Embla Carousel JavaScript -->
+    <script src="https://unpkg.com/embla-carousel@8.0.0/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay@8.0.0/embla-carousel-autoplay.umd.js"></script>
+    <script src="dist/script/main.js"></script>
 </body>
 
 </html>
-<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-</svg>
-<svg class="star" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-</svg>
-<svg class="star" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-</svg>
-<svg class="star" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-</svg>
-<svg class="star" fill="currentColor" viewBox="0 0 24 24">
